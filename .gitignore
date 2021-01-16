@@ -4,3 +4,4 @@
 
 #do NOT ignore
 !.gitignore
+!.bash_aliases
