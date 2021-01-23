@@ -5,15 +5,18 @@ Various tools are used to help reach that goal, for example the cloud-based IDE 
 
 **Table of Contents:**
 
-[Debian](#a-debian)
-1. [Automating security updates](#1-automatic-security-updates)
-2. Automating back-up processes
-3. Automating monitoring of installed packages
+- [debian-setup](#debian-setup)
+- [Debian](#debian)
+  - [1. Automatic security updates](#1-automatic-security-updates)
+  - [2. Automating back-up processes](#2-automating-back-up-processes)
+  - [3. Automating monitoring of installed packages](#3-automating-monitoring-of-installed-packages)
+- [Other interesting Linux distributions](#other-interesting-linux-distributions)
+  - [1. Alpine Linux](#1-alpine-linux)
+- [Useful commands](#useful-commands)
 
-[Other interesting Linux distributions](#b-other-interesting-linux-distributions)
-   1. [Alpine Linux](#1-alpine-linux)
 
-# A. Debian
+
+# Debian
 
 The aim of the corresponding Linux Debian machine should be to try to reach and maintain a good security level, for example by:
 1. **automating security updates** of the Linux Debian OS (eventually with e-mail reports to root) 
@@ -28,10 +31,16 @@ Getting advised about security problems:
 
 https://lists.debian.org/debian-security-announce/
 
-# B. Other interesting Linux distributions
+## 2. Automating back-up processes
+
+## 3. Automating monitoring of installed packages
+
+# Other interesting Linux distributions
 
 ## 1. Alpine Linux
 
 https://alpinelinux.org/
 
 *"Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox."*
+
+# Useful commands
