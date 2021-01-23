@@ -1,29 +1,29 @@
-# debian-setup
+# 1. Aim of this repo
 Aim of this repo is to keep track of various Linux Debian settings files, shell scripts, and more.
 
-Various tools are used to help reach that goal, for example the cloud-based IDE Codeanywhere (https://codeanywhere.com/) with which it is possible to ssh to the server, and also the IDE Visual Studio Code (https://code.visualstudio.com/) for easily editing Markdown. Therefore Powershell will also be used and customized, for example for adding useful aliases and functions.
+Various tools are used to help reach that goal, for example the cloud-based IDE Codeanywhere with which it is possible to ssh to the server, and also the IDE Visual Studio Code for easily editing Markdown (with the Markdown All in One extension from Yu Zhang). Therefore Powershell will also be used and customized, for example for adding useful aliases and functions.
 
 **Table of Contents:**
 
-- [debian-setup](#debian-setup)
-- [Debian](#debian)
-  - [1. Automatic security updates](#1-automatic-security-updates)
-  - [2. Automating back-up processes](#2-automating-back-up-processes)
-  - [3. Automating monitoring of installed packages](#3-automating-monitoring-of-installed-packages)
-- [Other interesting Linux distributions](#other-interesting-linux-distributions)
-  - [1. Alpine Linux](#1-alpine-linux)
-- [Useful commands](#useful-commands)
+- [1. Aim of this repo](#1-aim-of-this-repo)
+- [2. Debian](#2-debian)
+  - [2.1. Automatic security updates](#21-automatic-security-updates)
+  - [2.2. Automating back-up processes](#22-automating-back-up-processes)
+  - [2.3. Automating monitoring of installed packages](#23-automating-monitoring-of-installed-packages)
+- [3. Other interesting Linux distributions](#3-other-interesting-linux-distributions)
+  - [3.1. Alpine Linux](#31-alpine-linux)
+- [4. Useful commands](#4-useful-commands)
 
 
 
-# Debian
+# 2. Debian
 
 The aim of the corresponding Linux Debian machine should be to try to reach and maintain a good security level, for example by:
 1. **automating security updates** of the Linux Debian OS (eventually with e-mail reports to root) 
 2. **automating back-up processes** of the Filesystem, or at least first of the /home directory 
 3. **automating monitoring of installed packages:** how many packages are installed, when have they been installed and updated last, have they already been scanned / parsed by automated security monitoring tools, are they mandatory / required for the operational purpose of the server, or are they mandatory dependency of such packages
 
-## 1. Automatic security updates
+## 2.1. Automatic security updates
 
 see: https://wiki.debian.org/UnattendedUpgrades
 
@@ -31,16 +31,25 @@ Getting advised about security problems:
 
 https://lists.debian.org/debian-security-announce/
 
-## 2. Automating back-up processes
+## 2.2. Automating back-up processes
 
-## 3. Automating monitoring of installed packages
+## 2.3. Automating monitoring of installed packages
 
-# Other interesting Linux distributions
+# 3. Other interesting Linux distributions
 
-## 1. Alpine Linux
+## 3.1. Alpine Linux
 
 https://alpinelinux.org/
 
 *"Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox."*
 
-# Useful commands
+# 4. Useful commands
+
+| ID | Command                   | Description                                 |
+| :---: | :------------------------ | :------------------------------------------ |
+| 1 | sudo apt list --installed | lists all packages installed on your system, including information about the package versions and architecture. |
+| 2 | sudo apt list --installed \| less | Same as above, but piped to less for making it easier to read. |
+| 3 | sudo dpkg-query -l \| less | lists all installed packages, with a short description. Not sure if it may gives different results from Command ID 1 |
+| 4 | sudo dpkg-query -f '${binary:Package}\n' -W > packages_list.txt | store the list of all installed packages on your Debian system to a file called packages_list.txt
+| 5 | sudo xargs -a packages_list.txt apt install | install the same packages on a new server (can be useful for restoring or duplicating a production server maybe)
+| 6 | sudo dpkg-query -f '${binary:Package}\n' -W \| wc -l | Count the Number of Installed Packages
