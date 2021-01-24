@@ -38,6 +38,7 @@ https://lists.debian.org/debian-security-announce/
 ~$ mkdir etc/
 ~$ mkdir etc/apt/
 ~$ mkdir etc/apt/apt.conf.d/
+~$ sudo mv /etc/apt/apt.conf.d/50unattended-upgrades etc/apt/apt.conf.d/
 ```
 
 ## 2.2. Automating back-up processes
