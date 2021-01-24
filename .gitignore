@@ -1,7 +1,8 @@
 #ignore files in current folder as well as subfolders
-*
-*/
+/*
 
-#do NOT ignore
+#do NOT ignore (Files)
 !.gitignore
 !.bash_aliases
+
+!/etc
