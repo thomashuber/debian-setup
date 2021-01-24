@@ -14,8 +14,6 @@ Various tools are used to help reach that goal, for example the cloud-based IDE 
   - [3.1. Alpine Linux](#31-alpine-linux)
 - [4. Useful commands](#4-useful-commands)
 
-
-
 # 2. Debian
 
 The aim of the corresponding Linux Debian machine should be to try to reach and maintain a good security level, for example by:
@@ -30,6 +28,17 @@ see: https://wiki.debian.org/UnattendedUpgrades
 Getting advised about security problems:
 
 https://lists.debian.org/debian-security-announce/
+
+```
+#Installing required packages
+~$ apt-get install unattended-upgrades apt-listchanges
+
+#Symlinking the config file into home directory, for easier Git tracking
+#and back-up
+~$ mkdir etc/
+~$ mkdir etc/apt/
+~$ mkdir etc/apt/apt.conf.d/
+```
 
 ## 2.2. Automating back-up processes
 
