@@ -33,11 +33,20 @@ https://lists.debian.org/debian-security-announce/
 #Installing required packages
 ~$ apt-get install unattended-upgrades apt-listchanges
 
-#Symlinking the config file into home directory, for easier Git tracking
+#Symlinking config files into home directory, for easier Git tracking
 #and back-up
 ~$ mkdir etc/
 ~$ mkdir etc/apt/
 ~$ mkdir etc/apt/apt.conf.d/
+
+#50unattended-upgrades
+~$ sudo mv /etc/apt/apt.conf.d/50unattended-upgrades etc/apt/apt.conf.d/
+~$ sudo ln -s ~/etc/apt/apt.conf.d/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
+
+#20auto-upgrades
+~$ sudo dpkg-reconfigure -plow unattended-upgrades
+~$ sudo mv /etc/apt/apt.conf.d/20auto-upgrades etc/apt/apt.conf.d/
+~$ sudo ln -s ~/etc/apt/apt.conf.d/20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
 ```
 
 ## 2.2. Automating back-up processes
