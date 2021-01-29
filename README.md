@@ -9,7 +9,9 @@ Various tools are used to help reach that goal, for example the cloud-based IDE 
 - [2. Debian](#2-debian)
   - [2.1. Automatic security updates](#21-automatic-security-updates)
   - [2.2. Automating back-up processes](#22-automating-back-up-processes)
-  - [2.3. Automating monitoring of installed packages](#23-automating-monitoring-of-installed-packages)
+  - [2.3. Automating monitoring](#23-automating-monitoring)
+    - [Installed packages](#installed-packages)
+    - [Configuration files integrity](#configuration-files-integrity)
 - [3. Other interesting Linux distributions](#3-other-interesting-linux-distributions)
   - [3.1. Alpine Linux](#31-alpine-linux)
 - [4. Useful commands](#4-useful-commands)
@@ -19,7 +21,9 @@ Various tools are used to help reach that goal, for example the cloud-based IDE 
 The aim of the corresponding Linux Debian machine should be to try to reach and maintain a good security level, for example by:
 1. **automating security updates** of the Linux Debian OS (eventually with e-mail reports to root) 
 2. **automating back-up processes** of the Filesystem, or at least first of the /home directory 
-3. **automating monitoring of installed packages:** how many packages are installed, when have they been installed and updated last, have they already been scanned / parsed by automated security monitoring tools, are they mandatory / required for the operational purpose of the server, or are they mandatory dependency of such packages
+3. **automating monitoring** 
+   - **of installed packages:** how many packages are installed, when have they been installed and updated last, have they already been scanned / parsed by automated security monitoring tools, are they mandatory / required for the operational purpose of the server, or are they mandatory dependency of such packages
+   - **of configuration files:**
 
 ## 2.1. Automatic security updates
 
@@ -51,7 +55,11 @@ https://lists.debian.org/debian-security-announce/
 
 ## 2.2. Automating back-up processes
 
-## 2.3. Automating monitoring of installed packages
+## 2.3. Automating monitoring 
+
+### Installed packages
+
+### Configuration files integrity
 
 # 3. Other interesting Linux distributions
 
