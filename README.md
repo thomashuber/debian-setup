@@ -61,6 +61,25 @@ https://lists.debian.org/debian-security-announce/
 
 ### Configuration files integrity
 
+Could be achieved with a bash shell script.
+
+```
+#!/usr/bin/env bash
+
+ERRORS_NUMBER=0
+
+if [[ ! -d /etc/apt/apt.conf.d/ ]]; then
+  ERRORS_NUMBER = ERRORS_NUMBER + 1
+  echo "/etc/apt/apt.conf.d/ not a directory"
+fi
+if [[ ! -d ~/etc/apt/apt.conf.d/ ]]; then
+  ERRORS_NUMBER = ERRORS_NUMBER + 1
+  echo "~/etc/apt/apt.conf.d/ not a directory"
+fi
+
+echo "Number of errors found: $(ERRORS_NUMBER)"
+```
+
 # 3. Other interesting Linux distributions
 
 ## 3.1. Alpine Linux
