@@ -4,5 +4,6 @@
 #do NOT ignore (Files)
 !.gitignore
 !.bash_aliases
+!check_config.sh
 
 !/etc
