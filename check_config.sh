@@ -29,4 +29,4 @@ if [[ ! -s ~/etc/apt/apt.conf.d/20auto-upgrades ]]; then
   echo "~/etc/apt/apt.conf.d/20auto-upgrades  does not exist or is empty" 
 fi
 
-echo "Number of errors found: $(ERRORS_NUMBER)"
+echo "Number of errors found: $ERRORS_NUMBER"
