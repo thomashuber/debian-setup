@@ -59,6 +59,8 @@ https://lists.debian.org/debian-security-announce/
 
 ### Installed packages
 
+A private Github repository will be used to monitor installed packages, and changes made to the installed packages, for example through automatic updates.
+
 ### Configuration files integrity
 
 Could be achieved with a bash shell script.
