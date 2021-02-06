@@ -29,7 +29,7 @@ if [[ ! -h /etc/apt/apt.conf.d/20auto-upgrades ]]; then
 fi
 if [[ ! -h ~/.bash_aliases ]]; then
   ((ERRORS_NUMBER_SYMLINKS = ERRORS_NUMBER_SYMLINKS + 1))
-  echo "~/.bash_aliases not a symlink" 
+  echo "~/.bash_aliases not a symlink. Issue command 'ln -s ~/debian-setup/.bash_aliases ~/.bash_aliases'" 
 fi
 
 #----------------------------#
