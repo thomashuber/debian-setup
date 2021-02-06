@@ -45,12 +45,12 @@ https://lists.debian.org/debian-security-announce/
 
 #50unattended-upgrades
 ~$ sudo mv /etc/apt/apt.conf.d/50unattended-upgrades etc/apt/apt.conf.d/
-~$ sudo ln -s ~/etc/apt/apt.conf.d/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
+~$ sudo ln -s ~/debian-setup/etc/apt/apt.conf.d/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
 
 #20auto-upgrades
 ~$ sudo dpkg-reconfigure -plow unattended-upgrades
 ~$ sudo mv /etc/apt/apt.conf.d/20auto-upgrades etc/apt/apt.conf.d/
-~$ sudo ln -s ~/etc/apt/apt.conf.d/20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
+~$ sudo ln -s ~/debian-setup/etc/apt/apt.conf.d/20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
 ```
 
 ## 2.2. Automating back-up processes
