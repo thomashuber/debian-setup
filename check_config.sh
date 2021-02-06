@@ -20,11 +20,11 @@ if [[ ! -h /etc/apt/apt.conf.d/20auto-upgrades ]]; then
   echo "/etc/apt/apt.conf.d/20auto-upgrades not a symlink" 
 fi
 
-if [[ ! -s ~/etc/apt/apt.conf.d/50unattended-upgrades ]]; then
+if [[ ! -s ~/debian-setup/etc/apt/apt.conf.d/50unattended-upgrades ]]; then
   ((ERRORS_NUMBER = ERRORS_NUMBER + 1))
   echo "~/debian-setup/etc/apt/apt.conf.d/50unattended-upgrades does not exist or is empty" 
 fi
-if [[ ! -s ~/etc/apt/apt.conf.d/20auto-upgrades ]]; then
+if [[ ! -s ~/debian-setup/etc/apt/apt.conf.d/20auto-upgrades ]]; then
   ((ERRORS_NUMBER = ERRORS_NUMBER + 1))
   echo "~/debian-setup/etc/apt/apt.conf.d/20auto-upgrades  does not exist or is empty" 
 fi
