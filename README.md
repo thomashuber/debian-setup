@@ -51,6 +51,9 @@ https://lists.debian.org/debian-security-announce/
 ~$ sudo dpkg-reconfigure -plow unattended-upgrades
 ~$ sudo mv /etc/apt/apt.conf.d/20auto-upgrades etc/apt/apt.conf.d/
 ~$ sudo ln -s ~/debian-setup/etc/apt/apt.conf.d/20auto-upgrades /etc/apt/apt.conf.d/20auto-upgrades
+
+#100update
+#see check_config.sh
 ```
 
 ## 2.2. Automating back-up processes
