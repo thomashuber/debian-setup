@@ -24,6 +24,7 @@ done
 Symlinks[0]=/etc/apt/apt.conf.d/50unattended-upgrades
 Symlinks+=(/etc/apt/apt.conf.d/20auto-upgrades)
 Symlinks+=(/etc/apt/apt.conf.d/100update)
+Symlinks+=(/usr/local/bin/check_packages.sh)
 Symlinks+=(~/.bash_aliases)
 for i in "${Symlinks[@]}"; do
   if [[ ! -h $i ]]; then
@@ -40,6 +41,7 @@ Conffiles[0]=~/debian-setup/etc/apt/apt.conf.d/50unattended-upgrades
 Conffiles+=(~/debian-setup/etc/apt/apt.conf.d/20auto-upgrades)
 Conffiles+=(~/debian-setup/etc/apt/apt.conf.d/100update)
 Conffiles+=(~/debian-setup/.bash_aliases)
+Conffiles+=(~/debian-setup/usr/local/bin/check_packages.sh)
 for i in "${Conffiles[@]}"; do
   if [[ ! -s $i ]]; then
     ((ERRORS_NUMBER_CONFFILES = ERRORS_NUMBER_CONFFILES + 1))
