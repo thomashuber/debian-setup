@@ -12,9 +12,10 @@ Various tools are used to help reach that goal, for example the cloud-based IDE 
   - [2.3. Automating monitoring](#23-automating-monitoring)
     - [Installed packages](#installed-packages)
     - [Configuration files integrity](#configuration-files-integrity)
+  - [2.4. Reinstallation procedure](#24-reinstallation-procedure)
 - [3. Other interesting Linux distributions](#3-other-interesting-linux-distributions)
   - [3.1. Alpine Linux](#31-alpine-linux)
-- [4. Useful commands](#4-useful-commands)
+- [4. Useful commands / Miscellaneous](#4-useful-commands--miscellaneous)
 
 # 2. Debian
 
@@ -69,6 +70,17 @@ A private Github repository will be used to monitor installed packages, and chan
 Could be achieved with a bash shell script.
 see: [check_config.sh](check_config.sh)
 
+## 2.4. Reinstallation procedure
+
+The underlying physical machine of the Debian server is supplied by OVHcloud, which also provides a control panel to reboot the machine or reinstall the system.
+
+SSH Keys are also managed with the OVHcloud control panel.
+
+The Reinstallation procedure could therefore be executed with following steps:
+
+1. Connect to the OVHcloud Control panel
+2. Ensure the default SSH key is the one which is currently installed client-side (for the private part of the key) (At the time writing, 2021/02/13, the only client used to ssh to the server is Codeanywhere)
+
 # 3. Other interesting Linux distributions
 
 ## 3.1. Alpine Linux
@@ -77,7 +89,7 @@ https://alpinelinux.org/
 
 *"Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox."*
 
-# 4. Useful commands
+# 4. Useful commands / Miscellaneous
 
 | ID | Command                   | Description                                 |
 | :---: | :------------------------ | :------------------------------------------ |
