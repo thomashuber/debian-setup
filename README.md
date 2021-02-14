@@ -72,22 +72,7 @@ see: [check_config.sh](check_config.sh)
 
 ## 2.4. Reinstallation procedure
 
-The underlying physical machine of the Debian server is supplied by OVHcloud, which also provides a control panel to reboot the machine or reinstall the system.
-
-SSH Keys are also managed with the OVHcloud control panel.
-
-The Reinstallation procedure could therefore be executed with following steps:
-
-1. Connect to the OVHcloud Control panel
-2. Ensure the default SSH public key is the one which is currently installed client-side (the corresponding private part of the key) (At the time writing, 2021/02/13, the only client used to ssh to the server is Codeanywhere). <br /><span style="color:lime;">(i)</span> The SSH key which is specified in the OVHcloud Control is the public part of the key.
-3. Reinstall the latest Debian Stable from OVHcloud control panel.
-4. `~$ apt-get install unattended-upgrades apt-listchanges`
-   <br />
-   `~$ cd ~ && git clone https://github.com/thomashuber/debian-setup.git`
-   <br />
-   `~$ bash ./check_config.sh`
-   <br />
-   And follow instructions for recreating symlinks.
+see: https://github.com/thomashuber/debian-setup-private
 
 # 3. Other interesting Linux distributions
 
