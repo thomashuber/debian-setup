@@ -80,7 +80,7 @@ The Reinstallation procedure could therefore be executed with following steps:
 
 1. Connect to the OVHcloud Control panel
 2. Ensure the default SSH public key is the one which is currently installed client-side (the corresponding private part of the key) (At the time writing, 2021/02/13, the only client used to ssh to the server is Codeanywhere). <br /><span style="color:lime;">(i)</span> The SSH key which is specified in the OVHcloud Control is the public part of the key.
-3. Reinstall the latest Debian Stable from OVHcloud control pannel.
+3. Reinstall the latest Debian Stable from OVHcloud control panel.
 4. `~$ apt-get install unattended-upgrades apt-listchanges`
    <br />
    `~$ cd ~ && git clone https://github.com/thomashuber/debian-setup.git`
