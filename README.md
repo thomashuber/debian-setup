@@ -79,7 +79,7 @@ SSH Keys are also managed with the OVHcloud control panel.
 The Reinstallation procedure could therefore be executed with following steps:
 
 1. Connect to the OVHcloud Control panel
-2. Ensure the default SSH key is the one which is currently installed client-side (for the private part of the key) (At the time writing, 2021/02/13, the only client used to ssh to the server is Codeanywhere)
+2. Ensure the default SSH private + public key pair is the one which is currently installed client-side (for the private part of the key) (At the time writing, 2021/02/13, the only client used to ssh to the server is Codeanywhere). <br /><span style="color:lime;">(i)</span> The SSH key which is specified in the OVHcloud Control is the public part of the key.
 
 # 3. Other interesting Linux distributions
 

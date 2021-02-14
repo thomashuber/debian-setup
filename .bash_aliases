@@ -8,5 +8,11 @@ alias debian-setup='cd ~/debian-setup'
 alias private='cd ~/debian-setup-private'
 
 gacp() {
-    git add . && git commit -m "$1" && git push
+    if [[ "$#" -ne 1 ]]; then 
+        echo "Usage: gacp \"My commit message\""
+        return 1
+    else
+        git add . && git commit -m "$1" && git push
+        return 0
+    fi
 }
