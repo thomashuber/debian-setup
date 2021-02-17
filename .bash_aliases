@@ -7,6 +7,8 @@ alias gita="python3 -m gita"
 alias debian-setup='cd ~/debian-setup'
 alias private='cd ~/debian-setup-private'
 
+export PATH=~/debian-setup/bin:$PATH
+
 gacp() {
     if [[ "$#" -ne 1 ]]; then 
         echo "Usage: gacp \"My commit message\""
