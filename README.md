@@ -59,6 +59,8 @@ https://lists.debian.org/debian-security-announce/
 
 ## 2.2. Automating back-up processes
 
+The private Github repository "debian-setup" will also probably be used to analyse the needs and elaborate a global back-up strategy.
+
 ## 2.3. Automating monitoring 
 
 ### Installed packages
